@@ -1,4 +1,4 @@
-![Vista previa](preview.png)
+<img src="preview.png">
 
 My bar consists of three sections:
 

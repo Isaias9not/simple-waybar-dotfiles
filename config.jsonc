@@ -1,0 +1,66 @@
+{
+    "layer": "top",
+    "margin-bottom": 6,
+    "margin-top": 0,
+    "modules-left": ["clock", "hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "network", "battery"],
+    "width": 1920,
+    "output": "eDP-1",
+
+
+    "battery": {
+        "format": "/{capacity}{icon}/",
+        "format-icons": {
+            "default": ["/","|","/","|","*"],
+            "charging": ["󱐋"]
+        },
+    },
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:L%a, %d~%Om~%Y}",
+        "timezone": "America/Santo_Domingo",
+        "locale": "es_DO.UTF-8",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        /*"special-visible-only": true,
+        "show-special": true,*/
+        "format": "{name}",
+        "persistent-workspaces": {
+                "*": 5, // 5 workspaces by default on every monitor
+                "HDMI-A-1": 5, // but only three on HDMI-A-1
+
+            }
+    },
+
+    "hyprland/window": {
+        "icon": true,
+        "icon-size": 20,
+        "format": "{class}",
+        "tooltip": false
+    },
+    "network": {
+        "format-wifi": "{signalStrength}% ",
+        "format-disconnected": "NoWifi 󰤫", //An empty format will hide the module.
+        "tooltip-format-wifi": "{essid}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "headset": "󰋎",
+            "phone": "",
+            "phone-muted": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    }
+}

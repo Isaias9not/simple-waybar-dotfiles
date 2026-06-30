@@ -1,0 +1,118 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "SF-Mono-Regular", JetBrainsMono Nerd Font Propo;
+    
+    font-size: 15px;
+    font-weight: 600;
+    
+    /* Obligatorio???*/
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2px;
+}
+
+window#waybar {
+    color: white;
+    background-color: rgba(201, 201, 201, 0.10);
+    padding-bottom: 1px;
+    /*border-bottom: 2px solid rgba(255,255,255,0.5);*/
+}
+
+.modules-left {
+    color: white;
+    /*background-color: #111827;*/
+    border-radius: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+    /*border-left: 2px solid rgba(255,255,255,0.5);
+    border-right: 2px solid rgba(255,255,255,0.5);*/
+
+}
+
+tooltip {
+    background: #000000;
+    color: black;
+    border-radius: 13px;
+}
+
+.modules-center {
+    /*border-left: 2px solid rgba(255,255,255,0.5);
+    border-right: 2px solid rgba(255,255,255,0.5);*/
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 13px;
+}
+
+#workspaces button {
+    padding: 0 15px;
+    border-radius: 13px;
+    color: white;
+}
+
+#workspaces button:hover {
+    color: black;
+}
+
+#workspaces button.active {
+    transition: all 400ms ease-in-out;
+    min-width: 60px;
+    color: black;
+    background-color: #F6C453;
+}
+
+#workspaces {
+    border-radius: 13px;
+    /*background: rgba(0, 0, 0, 7);*/
+}
+
+/*
+ * #workspaces button.special {
+    transition: all 400ms ease-in-out;
+    min-width: 50px;
+    color: #F6C453;
+    background-color: #ffffff;
+ }
+*/
+
+#battery {
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+#battery.charging {
+    color: #F6C453;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.modules-right {
+    color: white;
+    /*background-color: rgb(0, 0, 0);*/
+    border-radius: 13px;
+    /*border-left: 2px solid rgba(255,255,255,0.5);
+    border-right: 2px solid rgba(255,255,255,0.5);*/
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#pulseaudio {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#network {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#window {
+    margin-left: 10px;
+}
+
+#clock {
+    padding-left: 8px;
+}

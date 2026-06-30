@@ -1,3 +1,5 @@
+![Vista previa](preview.png)
+
 My bar consists of three sections:
 
 left { 
